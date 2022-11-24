@@ -1,0 +1,30 @@
+{
+  "name": "komfort-middleware",
+  "version": "1.0.1",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --build .",
+    "test": "mocha -r ts-node/register -r tsconfig-paths/register './test/**/*.test.ts'",
+    "clean:dist": "del /F /S /Q dist",
+    "publish": "npm run build && npm publish"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.0",
+    "chai": "^4.3.7",
+    "mocha": "^10.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.3",
+    "tsconfig-paths-webpack-plugin": "^4.0.0"
+  },
+  "dependencies": {},
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://gitlab.porta.com.pl/api/v4/projects/175/packages/npm/",
+    "tag": "komfort-middleware"
+  }
+}
