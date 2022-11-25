@@ -1,6 +1,6 @@
 {
-  "name": "@twerno/komfort-middleware",
-  "version": "1.0.2",
+  "name": "@twerno/konfigurator-middleware",
+  "version": "1.0.5",
   "description": "",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -9,7 +9,7 @@
     "test": "mocha -r ts-node/register -r tsconfig-paths/register './test/**/*.test.ts'",
     "clean:dist": "del /F /S /Q dist"
   },
-  "author": "",
+  "author": "PORTA KMI POLAND SA",
   "license": "ISC",
   "devDependencies": {
     "@types/chai": "^4.3.4",
@@ -23,7 +23,7 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/mlangowskiPorta/konfiguratorMiddleware.git"
+    "url": "https://github.com/twerno/konfigurator-middleware.git"
   },
   "publishConfig": {
     "twerno:registry": "https://npm.pkg.github.com"
