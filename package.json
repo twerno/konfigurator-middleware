@@ -1,14 +1,13 @@
 {
   "name": "@twerno/komfort-middleware",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc --build .",
     "test": "mocha -r ts-node/register -r tsconfig-paths/register './test/**/*.test.ts'",
-    "clean:dist": "del /F /S /Q dist",
-    "publish": "npm run build && npm publish"
+    "clean:dist": "del /F /S /Q dist"
   },
   "author": "",
   "license": "ISC",
