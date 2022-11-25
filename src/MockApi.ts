@@ -1,7 +1,7 @@
-import { IPortaKonfiguratorApi, IInitConfigDataProps, IPortaConfigData, IPortaConfigField, IPortaConfigOption, IConfigDataSummary, ISendToCartProps } from "@@/api";
-import { products } from "@@/db";
-import { symbolicUtils } from "@@/symbolicUtils";
-import { IProduct } from "@@/types/IProduct";
+import type { IConfigDataSummary, IInitConfigDataProps, IPortaConfigData, IPortaConfigField, IPortaConfigOption, IPortaKonfiguratorApi, ISendToCartProps } from "./api";
+import { products } from "./db";
+import { symbolicUtils } from "./symbolicUtils";
+import type { IProduct } from "./types/IProduct";
 
 const konfigurowalneCechy_SSVCS = ["03-RODZAJ", "08-STRONA", "10-ROZMIAR2", "13-SKR-WYPOSAZ", "14-OKUC-KOLOR", "15-ZAMEK", "16-ZAWIAS", "18-SKR-WYPEL"];
 const COLOR_KEY_NAME = "KOLOR";

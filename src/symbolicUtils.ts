@@ -1,4 +1,4 @@
-import { ISymbolValue } from "src/types/IProduct";
+import type { ISymbolValue } from "./types/IProduct";
 
 export const symbolicUtils = {
     parseSymbolic,

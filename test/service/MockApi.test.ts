@@ -1,7 +1,7 @@
 import { describe } from "mocha";
 import { expect, assert } from 'chai';
-import { IInitConfigDataProps } from "@@/api";
-import { MockApi } from "@@/MockApi";
+import { MockApi } from '../../src/MockApi';
+import { IInitConfigDataProps } from '../../src/api';
 
 describe('MockApi', function () {
     const mock = new MockApi();

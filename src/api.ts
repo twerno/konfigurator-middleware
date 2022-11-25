@@ -1,5 +1,4 @@
-import { ISymbolValue } from "@@/types/IProduct";
-
+import type { ISymbolValue } from "./types/IProduct";
 
 export interface IPortaKonfiguratorApi {
 
