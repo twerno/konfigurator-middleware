@@ -1,3 +1,4 @@
+import { previewBuilder } from "previewBuilder";
 import type { IConfigDataSummary, IInitConfigDataProps, IPortaConfigData, IPortaConfigField, IPortaConfigOption, IPortaKonfiguratorApi, ISendToCartProps } from "./api";
 import { products } from "./db";
 import { symbolicUtils } from "./symbolicUtils";
@@ -119,12 +120,7 @@ export class MockApi implements IPortaKonfiguratorApi {
 
 
     public async getImage(configData: IPortaConfigData): Promise<HTMLCanvasElement> {
-        const canvas = new HTMLCanvasElement();
-
-        canvas.height = 800;
-        canvas.width = 600;
-
-        return canvas;
+        return previewBuilder(800, 800);
     }
 
     public async loadConfiguration(configurationId: string): Promise<IPortaConfigData> {
